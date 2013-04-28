@@ -28,24 +28,38 @@ namespace ConsoleApplication1
             int inputI;
             while (continuar)
             {
+               
                 Console.WriteLine("Ingrese la opcion que desee: \n1- Crear flujo\n2- Abrir flujo\n3- Unir flujo\n4- Ejecutar flujo\n0- Salir");
                 inputS = Console.ReadLine();
                 inputI = Convert.ToInt32(inputS);
+                #region apreto 0
                 if(inputI==0)
-                {
+                { 
+                    Console.Clear();
                     continuar = false;
+                   
                 }
+#endregion
+                #region apreto 1
                 else if(inputI==1)
                 {
-                    flujos.Add(new Flujo(true,-1,-1));
-                    Console.WriteLine("Este flujo desde ahora tendrá el índice "+(flujos.Count));
+                    Console.Clear();
+                    Console.WriteLine("ingrese el nombre del Flujo");//mano--------------------
+                    string nom = Console.ReadLine();
+                    flujos.Add(new Flujo(true,-1,-1,nom));
+                    Console.WriteLine("Este flujo ("+nom+") desde ahora tendrá el índice ("+(flujos.Count)+")");
+                    
                 }
+#endregion
+                #region apreto 2
                 else if (inputI == 2)
                 {
+                    Console.Clear();
                     Console.WriteLine("Ingrese el indice del flujo que desea abrir: ");
                     string inputs21 = Console.ReadLine();
                     int inputi21 = Convert.ToInt32(inputs21);
                     List<Operacion> op = flujos[inputi21-1].Operaciones;
+                    Console.WriteLine("Flujo : "+flujos[inputi21-1].Nombre);//mano-----------------------
                     if (op.Count == 0)
                     {
                         Console.WriteLine("El flujo no tiene operaciones");
@@ -63,6 +77,8 @@ namespace ConsoleApplication1
                         bool agregarOperaciones = true;
                         while(agregarOperaciones)
                         {
+                            Console.Clear();//mano-------------------------------------------
+                            flujos[inputi21 - 1].Mostrar();//mano-------------------------------------------------
                             Console.WriteLine("Indique la operacion que desea agregar: \n1- Sumar\n2- Restar\n3- Negar\n4- Sumatoria\n5- Inverso\n0- Salir");
                             string sAux = Console.ReadLine();
                             int iAux = Convert.ToInt32(sAux);
@@ -71,24 +87,33 @@ namespace ConsoleApplication1
                                 agregarOperaciones = false;
                             }
                             else
-                            {
+                            { 
+                                
                                 flujos[inputi21-1].AgregarOperacion(iAux);
+                               
                             }
                         }
                     }
+                   
                 }
+# endregion
+                #region apreto 3
                 else if (inputI == 3)
                 {
+                    Console.Clear();
                     Console.WriteLine("Ingrese los indices de los flujos que desea unir: ");
                     string inputs31 = Console.ReadLine();
                     string inputs32 = Console.ReadLine();
                     int inputi31 = Convert.ToInt32(inputs31);
                     int inputi32 = Convert.ToInt32(inputs32);
-                    flujos.Add(new Flujo(false,inputi31-1,inputi32-1));
+                    flujos.Add(new Flujo(false,inputi31-1,inputi32-1," "));//falta el nombre
                     Console.WriteLine("La union de los flujos "+inputi31+ " y "+inputi32+" tendrá el índice "+(flujos.Count));
                 }
+                #endregion
+                #region apreto 4
                 else if(inputI == 4)
                 {
+                    Console.Clear();
                     Variable resultado = new Variable();
                     string valors1;
                     int valori1;
@@ -184,10 +209,12 @@ namespace ConsoleApplication1
                         }
                     }
                 }
+                #endregion
                 else
                 {
-                    Console.WriteLine("asdf");
+                    Console.WriteLine("señor pare de cavecear el teclado");
                 }
+               
             }
         }
 

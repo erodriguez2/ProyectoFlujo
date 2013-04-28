@@ -36,6 +36,7 @@ namespace ConsoleApplication1
                     {
                         if (p.Nombre == name)
                         {
+                            Console.Clear();
                             p.Abrir();
                         }
                     }
