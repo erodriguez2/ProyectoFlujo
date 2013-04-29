@@ -10,3 +10,8 @@ C:\Users\jose miguel\Desktop\Nueva carpeta\Flujos\ConsoleApplication1\bin\Debug\
 C:\Users\jose miguel\Desktop\Nueva carpeta\Flujos\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
 C:\Users\jose miguel\Desktop\universidad\progra\Flujos\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
 C:\Users\jose miguel\Desktop\universidad\progra\Flujos\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\jose miguel\Desktop\universidad\progra\Cambios\ProyectoFlujo\Flujos\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\jose miguel\Desktop\universidad\progra\Cambios\ProyectoFlujo\Flujos\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\jose miguel\Desktop\universidad\progra\Cambios\ProyectoFlujo\Flujos\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\jose miguel\Desktop\universidad\progra\Cambios\ProyectoFlujo\Flujos\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\jose miguel\Desktop\universidad\progra\Cambios\ProyectoFlujo\Flujos\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache

@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication1
 {
+    [Serializable]
     abstract class Operacion
     {
         protected Variable resultado = new Variable();

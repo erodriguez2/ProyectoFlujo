@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication1
 {
+    [Serializable]
     class Proyecto
     {
         List<Flujo> flujos;
@@ -106,7 +107,9 @@ namespace ConsoleApplication1
                     string inputs32 = Console.ReadLine();
                     int inputi31 = Convert.ToInt32(inputs31);
                     int inputi32 = Convert.ToInt32(inputs32);
-                    flujos.Add(new Flujo(false,inputi31-1,inputi32-1," "));//falta el nombre
+                    Console.WriteLine("ingrese el nuevo nombre de la union de flujos");
+                    string n=Console.ReadLine();
+                    flujos.Add(new Flujo(false,inputi31-1,inputi32-1,n));
                     Console.WriteLine("La union de los flujos "+inputi31+ " y "+inputi32+" tendrá el índice "+(flujos.Count));
                 }
                 #endregion

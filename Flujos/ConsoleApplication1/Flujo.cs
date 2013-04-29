@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ConsoleApplication1
 {
+    [Serializable]
     class Flujo
     {
         private List<Operacion> operaciones;
